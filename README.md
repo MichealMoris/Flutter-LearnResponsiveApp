@@ -1,16 +1,35 @@
-# responsive_app
 
-A new Flutter project.
+# Flutter Responsive App
 
-## Getting Started
+This is a simple Flutter app designed to demonstrate how to build a responsive app using Flutter. The app displays a placeholders of items that simulates the real content.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Responsive design that adapts to different screen sizes.
+- Clean and organized code structure.
+- Using LayoutBuilder and AspectRatio Widgets.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Screenshots
+
+
+
+https://github.com/MichealMoris/Flutter-LearnResponsiveApp/assets/138615256/d32aec5d-97db-4083-99e4-5dfd0d22b464
+
+
+
+## Contributing
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, please open an issue or submit a pull request. Please make sure to follow the code style and include appropriate tests for your changes.
+
+
+## Acknowledgements
+
+This app was developed based on the Flutter framework and was inspired by tutorials available online. Thank you to the Flutter community for their valuable contributions and resources.
+
+
+## Contact
+If you have any questions or need further assistance, feel free to contact me at michealmoriswaheeb@gmail.com.
+
+Happy learning and coding!

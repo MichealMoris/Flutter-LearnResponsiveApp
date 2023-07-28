@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:responsive_app/widgets/container.dart';
 
 class DesktopScreen extends StatelessWidget {
   const DesktopScreen({super.key});
@@ -20,42 +21,22 @@ class DesktopScreen extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: AspectRatio(
                     aspectRatio: 16 / 9,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Theme.of(context).colorScheme.primary,
-                        borderRadius: const BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
+                    child: ResponsiveContainer(
+                      color: Theme.of(context).colorScheme.primary,
                       height: 250,
-                      child: Center(
-                        child: Text(
-                          'Video',
-                          style: Theme.of(context).textTheme.labelLarge,
-                        ),
-                      ),
+                      text: 'Video',
+                      textStyle: Theme.of(context).textTheme.labelLarge,
                     ),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .primary
-                          .withOpacity(0.8),
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(8),
-                      ),
-                    ),
+                  child: ResponsiveContainer(
+                    color:
+                        Theme.of(context).colorScheme.primary.withOpacity(0.8),
                     height: 150,
-                    child: Center(
-                      child: Text(
-                        'Video Title and Description',
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                    ),
+                    text: 'Video Title and Description',
+                    textStyle: Theme.of(context).textTheme.labelMedium,
                   ),
                 ),
               ],
@@ -67,23 +48,12 @@ class DesktopScreen extends StatelessWidget {
               itemBuilder: (ctx, index) {
                 return Padding(
                   padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: Theme.of(context)
-                          .colorScheme
-                          .primary
-                          .withOpacity(0.6),
-                      borderRadius: const BorderRadius.all(
-                        Radius.circular(8),
-                      ),
-                    ),
+                  child: ResponsiveContainer(
+                    color:
+                        Theme.of(context).colorScheme.primary.withOpacity(0.6),
                     height: 120,
-                    child: Center(
-                      child: Text(
-                        'Suggested Videos',
-                        style: Theme.of(context).textTheme.labelSmall,
-                      ),
-                    ),
+                    text: 'Suggested Videos',
+                    textStyle: Theme.of(context).textTheme.labelSmall,
                   ),
                 );
               },

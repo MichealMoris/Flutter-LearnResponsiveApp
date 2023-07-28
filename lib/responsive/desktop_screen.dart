@@ -11,35 +11,38 @@ class DesktopScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('D E S K T O P 💻'),
       ),
-      //First Column...
       body: Row(
         children: [
           Expanded(
-            child: Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: AspectRatio(
-                    aspectRatio: 16 / 9,
-                    child: ResponsiveContainer(
-                      color: Theme.of(context).colorScheme.primary,
-                      height: 250,
-                      text: 'Video',
-                      textStyle: Theme.of(context).textTheme.labelLarge,
+            child: SingleChildScrollView(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: AspectRatio(
+                      aspectRatio: 16 / 9,
+                      child: ResponsiveContainer(
+                        color: Theme.of(context).colorScheme.primary,
+                        height: 250,
+                        text: 'Video',
+                        textStyle: Theme.of(context).textTheme.labelLarge,
+                      ),
                     ),
                   ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: ResponsiveContainer(
-                    color:
-                        Theme.of(context).colorScheme.primary.withOpacity(0.8),
-                    height: 150,
-                    text: 'Video Title and Description',
-                    textStyle: Theme.of(context).textTheme.labelMedium,
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: ResponsiveContainer(
+                      color: Theme.of(context)
+                          .colorScheme
+                          .primary
+                          .withOpacity(0.8),
+                      height: 150,
+                      text: 'Video Title and Description',
+                      textStyle: Theme.of(context).textTheme.labelMedium,
+                    ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
           ),
           Expanded(
@@ -61,7 +64,6 @@ class DesktopScreen extends StatelessWidget {
           ),
         ],
       ),
-      //Second Column...
     );
   }
 }
